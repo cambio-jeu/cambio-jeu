@@ -22,6 +22,29 @@ animation-duration: 0s !important;
 transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
 }
 
+a {
+  background: #FF7A00;
+  border: solid 7px;
+  border-color: black;
+  border-radius: 4px;
+  padding: 6px 18px 5px 18px;
+  margin-bottom: 1em;
+  color: black;
+  width: max-content;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #29252c;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .mxh {
   max-height: 100vh;
 }
@@ -60,7 +83,7 @@ transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, paddi
     margin-bottom: 0;
   }
   50% {
-    margin-bottom: -10px;
+    margin-bottom: -12px;
   }
 }
 
@@ -75,7 +98,7 @@ transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, paddi
   animation: PopOut 0.5s ease-out;
 }
 
-button:hover ~ #head {
+a:hover ~ #head {
   animation: PopIn 0.5s ease-out;
   animation-fill-mode: forwards;
 }
@@ -98,4 +121,23 @@ button:hover ~ #head {
   }
 }
 
+
+.overlay {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.overlay-img {
+  position: absolute;
+  bottom: 0;
+  right: 10vw;
+}
+
+#eyes-open {
+  z-index: 1;
+}
+#eyes-closed {
+  z-index: 0;
+}
 
