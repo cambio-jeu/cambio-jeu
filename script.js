@@ -3,14 +3,18 @@ setTimeout(function(){
 },500);
 
 
+const zindex = (el) => {
+
+};
+
 const closeEyes = () => {
-  let closed = document.getElementById("eyes-closed");
-  closed.style.zIndex = "2";
-  setTimeout(function() {
-    closed.style.zIndex = "0";
-  }, 50);
-
-
+  let closed = document.querySelectorAll(".eyes-closed");
+  closed.forEach(el => {
+    el.style.zIndex = "2";
+    setTimeout(function() {
+      el.style.zIndex = "0";
+    }, 50);
+  });
 };
 
 const randRange = (data) => {
