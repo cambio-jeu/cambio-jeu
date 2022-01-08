@@ -3,7 +3,7 @@ setTimeout(function(){
 },500);
 
 
-//FOR SMALL EYES
+// FOR SMALL EYES
 const closeEyesSmall = () => {
   let closed = document.querySelectorAll(".eyes-closed");
   closed.forEach(el => {
@@ -32,7 +32,7 @@ let timerSmall = setInterval(toggleSomethingSmall, 2000);
 // 1000 = Initial timer when the page is first loaded
 
 
-//FOR BIG EYES
+// FOR BIG EYES
 const closeEyesBig = () => {
   let closed = document.querySelectorAll(".big-eyes-closed");
   closed.forEach(el => {
