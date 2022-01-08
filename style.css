@@ -151,6 +151,17 @@ a:hover ~ #head {
 .eyes-closed {
   z-index: 0;
 }
+.big-eyes-open {
+  z-index: -1;
+}
+.big-eyes-closed {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+.left0 {
+  left: 0;
+}
 
 
 .bottom-0 {
@@ -176,5 +187,5 @@ a:hover ~ #head {
     display: block;
   }
 
-
 }
+
